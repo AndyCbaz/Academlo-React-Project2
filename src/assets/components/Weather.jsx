@@ -49,7 +49,7 @@ const Weather = ({ latitude, longitude }) => {
 
   useEffect(() => {
     fetchApi();
-  }, []); //Cuando inicia la ventana o cuando se presiona el boton de buscar
+  }); //Cuando inicia la ventana o cuando se presiona el boton de buscar
 
   return (
     <div className=" flex flex-col items-center grow justify-center">
