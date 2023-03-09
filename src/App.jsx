@@ -23,8 +23,8 @@ const App = () => {
   });
 
   return (
-    <div className="min-h-screen flex flex-col border-red-500 border-2 justify-start items-center p-4 back">
-      <div className="min-w-full flex flex-col grow border-sky-400 border-2 ">
+    <div className="min-h-screen flex flex-col justify-start items-center p-4 back">
+      <div className="min-w-full flex flex-col grow ">
         <Header />
         <Weather longitude={state.longitude} latitude={state.latitude} />
       </div>

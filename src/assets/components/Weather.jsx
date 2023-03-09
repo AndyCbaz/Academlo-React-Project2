@@ -52,25 +52,25 @@ const Weather = ({ latitude, longitude }) => {
   }, []); //Cuando inicia la ventana o cuando se presiona el boton de buscar
 
   return (
-    <div className="border-red-200 border-4 flex flex-col items-center grow justify-center">
-      <div className="border-red-500 border-2 relative flex flex-col ">
+    <div className=" flex flex-col items-center grow justify-center">
+      <div className=" relative flex flex-col ">
         <div className=" relative z-0">
           <img src={image1} alt="fondo" />
         </div>
-        <div className="parent border-green-300 border-2 absolute flex grow h-full w-full text-sky-500">
-          <div className="div1 flex justify-center items-center border-yellow-400 border-2 text-8xl">
+        <div className="parent  absolute flex grow h-full w-full text-sky-500">
+          <div className="div1 flex justify-center items-center  text-8xl">
             <span>{(gradesValue / convert2 + convert).toFixed(2)}°</span>
           </div>
-          <div className="flex flex-col div2 justify-center items-start border-yellow-400 border-2 pl-2">
+          <div className="flex flex-col div2 justify-center items-start  pl-2">
             <span>Presión: {presionValue}hPa</span>
             <span>Humedad: {humidityValue}%</span>
             <span>Viento: {windspeedValue}m/s</span>
           </div>
-          <div className="div3 flex justify-center items-center border-yellow-400 border-2">
+          <div className="div3 flex justify-center items-center ">
             <img src={iconurl} alt="icono clima" className="w-64" />
           </div>
-          <div className="div4 flex justify-between items-center border-yellow-400 border-2 px-4 pb-2">
-            <div className="border-red-400 border-2 w-64 text-center">
+          <div className="div4 flex justify-between items-center px-4 pb-2">
+            <div className=" w-64 text-center">
               <span>
                 {cityValue}, {countryValue}
               </span>
